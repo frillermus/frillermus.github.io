@@ -7,161 +7,44 @@
   <meta name="description" content="En samlet hub til mine GitHub Pages-projekter.">
   <title>Min web-hub</title>
   <style>
-    :root{color-scheme:dark;--bg:#10131c;--panel:rgba(25,30,44,.82);--text:#f4f6fb;--muted:#a9b1c5;--accent:#8b7cff;--accent2:#51d6bd;--line:rgba(255,255,255,.11);--shadow:0 24px 80px rgba(0,0,0,.32)}
-    *{box-sizing:border-box} body{margin:0;min-height:100vh;background:radial-gradient(ellipse at 12% 8%,rgba(139,124,255,.2),transparent 40%),radial-gradient(ellipse at 92% 78%,rgba(81,214,189,.11),transparent 36%),var(--bg);color:var(--text);font:16px/1.6 Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
-    body[data-theme="ocean"]{--bg:#081a24;--panel:rgba(11,39,52,.84);--accent:#45c6e8;--accent2:#69e0bd}body[data-theme="sunset"]{--bg:#24131d;--panel:rgba(54,27,42,.84);--accent:#ff8a75;--accent2:#ffd166}body[data-theme="light"]{color-scheme:light;--bg:#f1f3fa;--panel:rgba(255,255,255,.88);--text:#202436;--muted:#646c80;--line:rgba(25,31,50,.13);--shadow:0 24px 80px rgba(45,50,80,.12);background:radial-gradient(ellipse at 12% 8%,rgba(139,124,255,.18),transparent 40%),radial-gradient(ellipse at 92% 78%,rgba(81,214,189,.15),transparent 36%),var(--bg)}
-    button,input,textarea,select{font:inherit}button{cursor:pointer}.shell{width:min(1080px,calc(100% - 40px));margin:auto}.topbar{display:flex;align-items:center;justify-content:space-between;padding:27px 0}.brand{display:flex;align-items:center;gap:11px;font-weight:750;letter-spacing:.01em}.brand-mark{display:grid;place-items:center;width:37px;height:37px;border-radius:12px;background:linear-gradient(135deg,var(--accent),var(--accent2));color:#111523;font-size:19px}.top-actions{display:flex;align-items:center;gap:10px}.hero{padding:76px 0 42px;max-width:760px}.eyebrow{display:inline-flex;align-items:center;gap:8px;color:var(--accent2);font-size:.82rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase}.eyebrow:before{content:"";width:7px;height:7px;border-radius:50%;background:currentColor;box-shadow:0 0 16px currentColor}.hero h1{font-size:clamp(2.7rem,7vw,5.3rem);line-height:1.04;letter-spacing:-.055em;margin:19px 0}.hero p{color:var(--muted);font-size:1.15rem;max-width:620px;margin:0}.section-head{display:flex;align-items:end;justify-content:space-between;gap:20px;margin:38px 0 17px}.section-head h2{margin:0;font-size:1.3rem}.section-head p{margin:4px 0 0;color:var(--muted);font-size:.92rem}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,285px),1fr));gap:16px;padding-bottom:70px}.card{position:relative;display:flex;flex-direction:column;min-height:192px;padding:24px;border:1px solid var(--line);border-radius:20px;background:var(--panel);backdrop-filter:blur(16px);box-shadow:var(--shadow);text-decoration:none;color:var(--text);transition:transform .2s,border-color .2s}.card:hover{transform:translateY(-4px);border-color:color-mix(in srgb,var(--accent) 70%,transparent)}.card-icon{display:grid;place-items:center;width:43px;height:43px;border-radius:14px;background:color-mix(in srgb,var(--accent) 18%,transparent);color:var(--accent);font-size:20px;margin-bottom:17px}.card h3{margin:0 30px 6px 0;font-size:1.1rem}.card p{margin:0;color:var(--muted);font-size:.94rem}.arrow{position:absolute;right:22px;top:24px;color:var(--muted);font-size:20px}.empty{grid-column:1/-1;text-align:center;padding:45px 20px;border:1px dashed var(--line);border-radius:18px;color:var(--muted)}.button{border:1px solid var(--line);border-radius:11px;padding:9px 14px;background:var(--panel);color:var(--text);font-weight:650;transition:.2s}.button:hover{border-color:var(--accent);transform:translateY(-1px)}.button.primary{border:0;background:linear-gradient(120deg,var(--accent),var(--accent2));color:#111523}.button.small{font-size:.86rem;padding:7px 11px}.button.danger{color:#ff8585}.footer{border-top:1px solid var(--line);padding:22px 0 32px;color:var(--muted);font-size:.87rem;display:flex;justify-content:space-between;gap:15px}.footer a{color:inherit}.overlay{position:fixed;inset:0;z-index:5;display:none;place-items:center;padding:20px;background:rgba(5,7,12,.72);backdrop-filter:blur(8px)}.overlay.open{display:grid}.dialog{width:min(460px,100%);max-height:90vh;overflow:auto;padding:28px;border:1px solid var(--line);border-radius:20px;background:var(--bg);box-shadow:var(--shadow)}.dialog-head{display:flex;justify-content:space-between;align-items:start;gap:15px}.dialog h2{margin:0 0 4px}.dialog-head p{margin:0 0 20px;color:var(--muted)}.close{border:0;background:transparent;color:var(--muted);font-size:24px}.field{display:grid;gap:6px;margin:14px 0}.field label{font-size:.9rem;font-weight:650}.field input,.field textarea,.field select{width:100%;border:1px solid var(--line);border-radius:10px;padding:11px 12px;background:var(--panel);color:var(--text);outline:none}.field input:focus,.field textarea:focus,.field select:focus{border-color:var(--accent)}.field textarea{min-height:85px;resize:vertical}.notice{padding:12px 14px;margin:12px 0;border-radius:11px;background:color-mix(in srgb,var(--accent) 12%,transparent);color:var(--muted);font-size:.9rem;overflow-wrap:anywhere}.status{min-height:24px;color:var(--muted);font-size:.9rem}.editor{position:fixed;z-index:4;inset:0 0 0 auto;width:min(520px,100%);padding:24px;overflow:auto;background:var(--bg);border-left:1px solid var(--line);box-shadow:var(--shadow);transform:translateX(105%);transition:transform .25s}.editor.open{transform:translateX(0)}.editor-top{display:flex;justify-content:space-between;align-items:center;position:sticky;top:-24px;padding:16px 0;background:var(--bg);z-index:1}.editor-top h2{margin:0}.editor-actions{display:flex;gap:8px;flex-wrap:wrap;margin:15px 0}.link-editor{padding:16px;margin:13px 0;border:1px solid var(--line);border-radius:14px;background:var(--panel)}.link-editor-head{display:flex;justify-content:space-between;align-items:center;font-weight:700}.hidden{display:none!important}@media(max-width:600px){.shell{width:min(100% - 28px,1080px)}.topbar{padding:17px 0}.hero{padding:54px 0 27px}.hero p{font-size:1.02rem}.section-head{align-items:start;flex-direction:column}.footer{flex-direction:column}.top-actions{gap:7px}.button{padding:8px 10px}}
+    :root{color-scheme:dark;--bg:#10131c;--panel:#191e2c;--text:#f4f6fb;--muted:#a9b1c5;--accent:#8b7cff;--accent2:#51d6bd;--line:rgba(255,255,255,.12)}
+    *{box-sizing:border-box}body{margin:0;min-height:100vh;background:radial-gradient(ellipse at 12% 8%,#8b7cff30,transparent 40%),radial-gradient(ellipse at 92% 78%,#51d6bd20,transparent 36%),var(--bg);color:var(--text);font:16px/1.6 system-ui,-apple-system,"Segoe UI",sans-serif}body[data-theme="ocean"]{--bg:#081a24;--panel:#0b2734;--accent:#45c6e8;--accent2:#69e0bd}body[data-theme="sunset"]{--bg:#24131d;--panel:#361b2a;--accent:#ff8a75;--accent2:#ffd166}body[data-theme="light"]{color-scheme:light;--bg:#f1f3fa;--panel:#fff;--text:#202436;--muted:#646c80;--line:#20243620;background:radial-gradient(ellipse at 12% 8%,#8b7cff28,transparent 40%),radial-gradient(ellipse at 92% 78%,#51d6bd25,transparent 36%),var(--bg)}
+    .shell{width:min(1080px,calc(100% - 36px));margin:auto}.topbar{display:flex;align-items:center;justify-content:space-between;padding:24px 0}.brand,.actions{display:flex;align-items:center;gap:11px}.brand{font-weight:750}.mark{display:grid;place-items:center;width:38px;height:38px;border-radius:12px;background:linear-gradient(135deg,var(--accent),var(--accent2));color:#111523}.button{border:1px solid var(--line);border-radius:11px;padding:9px 14px;background:var(--panel);color:var(--text);font:inherit;font-weight:650;cursor:pointer}.button:hover{border-color:var(--accent)}.primary{border:0;background:linear-gradient(120deg,var(--accent),var(--accent2));color:#111523}.hidden{display:none!important}.hero{max-width:760px;padding:74px 0 42px}.eyebrow{color:var(--accent2);font-size:.82rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase}.hero h1{font-size:clamp(2.7rem,7vw,5.3rem);line-height:1.04;letter-spacing:-.055em;margin:19px 0}.hero p,.section-head p{color:var(--muted)}.hero p{font-size:1.12rem;max-width:620px}.section-head{margin:30px 0 17px}.section-head h2{margin:0}.section-head p{margin:4px 0}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,285px),1fr));gap:16px;padding-bottom:65px}.card{display:block;position:relative;min-height:175px;padding:24px;border:1px solid var(--line);border-radius:19px;background:var(--panel);color:var(--text);text-decoration:none;transition:transform .2s,border-color .2s}.card:hover{transform:translateY(-4px);border-color:var(--accent)}.icon{display:grid;place-items:center;width:42px;height:42px;border-radius:13px;background:#8b7cff25;color:var(--accent);margin-bottom:17px}.card h3{margin:0 25px 6px 0}.card p{margin:0;color:var(--muted)}.arrow{position:absolute;right:22px;top:22px;color:var(--muted)}.empty,.notice{padding:18px;border:1px solid var(--line);border-radius:14px;background:var(--panel);color:var(--muted)}.footer{border-top:1px solid var(--line);padding:22px 0 30px;color:var(--muted);display:flex;justify-content:space-between}.footer a{color:inherit}.overlay{position:fixed;inset:0;z-index:5;display:none;place-items:center;padding:18px;background:#05070cbb;backdrop-filter:blur(7px)}.overlay.open{display:grid}.dialog{width:min(450px,100%);padding:26px;border:1px solid var(--line);border-radius:20px;background:var(--bg)}.dialog-head{display:flex;justify-content:space-between;align-items:start}.dialog h2{margin:0}.dialog-head p{margin:2px 0 15px;color:var(--muted)}.close{border:0;background:none;color:var(--muted);font-size:25px;cursor:pointer}.field{display:grid;gap:6px;margin:14px 0}.field label{font-weight:650;font-size:.9rem}.field input,.field textarea,.field select{width:100%;border:1px solid var(--line);border-radius:10px;padding:11px;background:var(--panel);color:var(--text);font:inherit}.status{min-height:26px;color:var(--muted);font-size:.9rem;overflow-wrap:anywhere}.editor{position:fixed;z-index:4;inset:0 0 0 auto;width:min(520px,100%);padding:24px;overflow:auto;background:var(--bg);border-left:1px solid var(--line);transform:translateX(105%);transition:transform .25s}.editor.open{transform:translateX(0)}.editor-head,.link-head{display:flex;justify-content:space-between;align-items:center}.editor-head{position:sticky;top:-24px;padding:15px 0;background:var(--bg)}.editor h2{margin:0}.link-edit{padding:15px;margin:12px 0;border:1px solid var(--line);border-radius:14px;background:var(--panel)}.editor-actions{display:flex;gap:9px;flex-wrap:wrap;margin:15px 0}.danger{color:#ff8585}@media(max-width:600px){.hero{padding:48px 0 26px}.topbar{padding:16px 0}.button{padding:8px 10px}.footer{flex-direction:column;gap:8px}}
   </style>
 </head>
 <body data-theme="midnight">
   <div class="shell">
-    <header class="topbar">
-      <div class="brand"><span class="brand-mark">✦</span><span id="brandName">Min web-hub</span></div>
-      <div class="top-actions"><button class="button hidden" id="editButton">Tilpas side</button><button class="button" id="loginButton">Log ind</button><button class="button hidden" id="logoutButton">Log ud</button></div>
-    </header>
-    <main>
-      <section class="hero"><span class="eyebrow" id="eyebrow">Mine projekter</span><h1 id="pageTitle">Velkommen til min web-hub.</h1><p id="pageDescription">Her finder du alle mine GitHub Pages samlet ét sted. Vælg et projekt for at komme videre.</p></section>
-      <section class="setup hidden" id="setupNotice" aria-live="polite"></section>
-      <section aria-labelledby="projectsTitle"><div class="section-head"><div><h2 id="projectsTitle">Udforsk mine sider</h2><p id="projectSubtitle">Små projekter, idéer og ting jeg bygger på.</p></div></div><div class="grid" id="projectsGrid"></div></section>
-    </main>
-    <footer class="footer"><span id="footerText">Bygget med GitHub Pages</span><a href="https://github.com/frillermus" target="_blank" rel="noopener noreferrer">GitHub ↗</a></footer>
+    <header class="topbar"><div class="brand"><span class="mark">✦</span><span id="brand">Min web-hub</span></div><div class="actions"><button class="button hidden" id="editButton">Tilpas side</button><button class="button" id="loginButton" type="button">Log ind</button><button class="button hidden" id="logoutButton" type="button">Log ud</button></div></header>
+    <main><section class="hero"><span class="eyebrow" id="eyebrow">Mine projekter</span><h1 id="title">Velkommen til min web-hub.</h1><p id="description">Her finder du alle mine GitHub Pages samlet ét sted. Vælg et projekt for at komme videre.</p></section><div id="setupNotice" class="notice hidden"></div><section><div class="section-head"><h2 id="projectTitle">Udforsk mine sider</h2><p id="subtitle">Små projekter, idéer og ting jeg bygger på.</p></div><div class="grid" id="projects"></div></section></main>
+    <footer class="footer"><span id="footer">Bygget med GitHub Pages</span><a href="https://github.com/frillermus" target="_blank" rel="noopener noreferrer">GitHub ↗</a></footer>
   </div>
-
-  <div class="overlay" id="loginOverlay" role="dialog" aria-modal="true" aria-labelledby="loginTitle">
-    <form class="dialog" id="authForm"><div class="dialog-head"><div><h2 id="loginTitle">Log ind</h2><p id="authSubtitle">Log ind for at tilpasse din hub.</p></div><button class="close" type="button" id="closeLogin" aria-label="Luk">×</button></div>
-      <div class="field"><label for="email">E-mail</label><input id="email" type="email" autocomplete="email" required></div><div class="field"><label for="password">Adgangskode</label><input id="password" type="password" autocomplete="current-password" minlength="6" required></div>
-      <button class="button primary" type="submit" id="authSubmit">Log ind</button> <button class="button small" type="button" id="toggleSignup">Opret konto</button><div class="status" id="authStatus" role="status"></div>
-    </form>
-  </div>
-
-  <aside class="editor" id="editor" aria-label="Tilpas din side"><div class="editor-top"><h2>Tilpas din hub</h2><button class="close" id="closeEditor" aria-label="Luk">×</button></div>
-    <p style="color:var(--muted);margin-top:0">Ændringer gemmes på din Supabase-konto og vises for alle besøgende.</p>
-    <div class="field"><label for="editBrand">Navn i topbaren</label><input id="editBrand" maxlength="50"></div><div class="field"><label for="editEyebrow">Lille overskrift</label><input id="editEyebrow" maxlength="60"></div><div class="field"><label for="editTitle">Stor overskrift</label><input id="editTitle" maxlength="120"></div><div class="field"><label for="editDescription">Introduktion</label><textarea id="editDescription" maxlength="400"></textarea></div><div class="field"><label for="editProjectTitle">Titel over projekterne</label><input id="editProjectTitle" maxlength="80"></div><div class="field"><label for="editSubtitle">Kort tekst over projekterne</label><input id="editSubtitle" maxlength="160"></div><div class="field"><label for="editFooter">Footer-tekst</label><input id="editFooter" maxlength="100"></div>
-    <div class="field"><label for="editTheme">Farvetema</label><select id="editTheme"><option value="midnight">Midnat</option><option value="ocean">Hav</option><option value="sunset">Solnedgang</option><option value="light">Lys</option></select></div>
-    <div class="section-head"><div><h2>GitHub Pages-links</h2><p>Tilføj, redigér eller fjern dine projekter.</p></div></div><div id="linkEditors"></div><div class="editor-actions"><button class="button" id="addLink" type="button">＋ Tilføj side</button><button class="button primary" id="saveConfig" type="button">Gem ændringer</button></div><div class="status" id="saveStatus" role="status"></div>
+  <div class="overlay" id="loginOverlay" role="dialog" aria-modal="true" aria-labelledby="loginTitle"><form class="dialog" id="authForm"><div class="dialog-head"><div><h2 id="loginTitle">Log ind</h2><p id="authSubtitle">Log ind med din Supabase-konto.</p></div><button class="close" id="closeLogin" type="button" aria-label="Luk">×</button></div><div class="field"><label for="email">E-mail</label><input id="email" type="email" autocomplete="email" required></div><div class="field"><label for="password">Adgangskode</label><input id="password" type="password" autocomplete="current-password" minlength="6" required></div><button class="button primary" id="authSubmit" type="submit">Log ind</button> <button class="button" id="toggleSignup" type="button">Opret konto</button><div class="status" id="authStatus" role="status" aria-live="polite"></div></form></div>
+  <aside class="editor" id="editor" aria-label="Tilpas din side"><div class="editor-head"><h2>Tilpas din hub</h2><button class="close" id="closeEditor" aria-label="Luk">×</button></div><p style="color:var(--muted)">Ændringer gemmes via Supabase.</p>
+    <div class="field"><label for="editBrand">Navn i topbaren</label><input id="editBrand" maxlength="50"></div><div class="field"><label for="editEyebrow">Lille overskrift</label><input id="editEyebrow" maxlength="60"></div><div class="field"><label for="editTitle">Stor overskrift</label><input id="editTitle" maxlength="120"></div><div class="field"><label for="editDescription">Introduktion</label><textarea id="editDescription" maxlength="400"></textarea></div><div class="field"><label for="editProjectTitle">Titel over links</label><input id="editProjectTitle" maxlength="80"></div><div class="field"><label for="editSubtitle">Kort tekst over links</label><input id="editSubtitle" maxlength="160"></div><div class="field"><label for="editFooter">Footer-tekst</label><input id="editFooter" maxlength="100"></div><div class="field"><label for="editTheme">Farvetema</label><select id="editTheme"><option value="midnight">Midnat</option><option value="ocean">Hav</option><option value="sunset">Solnedgang</option><option value="light">Lys</option></select></div><h3>GitHub Pages-links</h3><div id="linkEditors"></div><div class="editor-actions"><button class="button" id="addLink" type="button">＋ Tilføj side</button><button class="button primary" id="saveConfig" type="button">Gem ændringer</button></div><div class="status" id="saveStatus" role="status"></div>
   </aside>
-
-  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
   <script>
-    const SUPABASE_URL = 'https://yewktdwjrbjqufgkphhs.supabase.co';
-    const SUPABASE_KEY = 'sb_publishable_6wmD232qfNqsoSo4X_4uRg_-C7cEngc';
-    const supabase = window.supabase.createClient(SUPABASE_URL, SUPABASE_KEY);
-    const defaults = {
-      brand:'Min web-hub', eyebrow:'Mine projekter', title:'Velkommen til min web-hub.',
-      description:'Her finder du alle mine GitHub Pages samlet ét sted. Vælg et projekt for at komme videre.',
-      projectTitle:'Udforsk mine sider', subtitle:'Små projekter, idéer og ting jeg bygger på.', footer:'Bygget med GitHub Pages', theme:'midnight',
-      links:[{title:'Mit GitHub',url:'https://github.com/frillermus',description:'Se mine repositories og projekter.'}]
-    };
-    let config = structuredClone(defaults), isSignup = false;
+    // Bind UI events before loading Supabase: the login dialog remains usable even if the SDK cannot load.
     const $ = id => document.getElementById(id);
+    let supabaseClient = null, isSignup = false;
+    const defaults = {brand:'Min web-hub',eyebrow:'Mine projekter',title:'Velkommen til min web-hub.',description:'Her finder du alle mine GitHub Pages samlet ét sted. Vælg et projekt for at komme videre.',projectTitle:'Udforsk mine sider',subtitle:'Små projekter, idéer og ting jeg bygger på.',footer:'Bygget med GitHub Pages',theme:'midnight',links:[{title:'Mit GitHub',url:'https://github.com/frillermus',description:'Se mine repositories og projekter.'}]};
+    let config = structuredClone(defaults);
     const escapeHTML = value => String(value ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
-    function render(){
-      document.body.dataset.theme=config.theme || 'midnight';
-      $('brandName').textContent=config.brand || defaults.brand;
-      $('eyebrow').textContent=config.eyebrow || defaults.eyebrow;
-      $('pageTitle').textContent=config.title || defaults.title;
-      $('pageDescription').textContent=config.description || defaults.description;
-      $('projectsTitle').textContent=config.projectTitle || defaults.projectTitle;
-      $('projectSubtitle').textContent=config.subtitle || defaults.subtitle;
-      $('footerText').textContent=config.footer || defaults.footer;
-      const grid=$('projectsGrid'); grid.replaceChildren();
-      if(!config.links || !config.links.length){ grid.innerHTML='<div class="empty">Der er endnu ingen sider her. Log ind og tilføj dine første links.</div>'; return; }
-      config.links.forEach((link,i)=>{ const card=document.createElement('a'); card.className='card'; card.href=link.url || '#'; card.target='_blank'; card.rel='noopener noreferrer'; card.innerHTML=`<span class="card-icon" aria-hidden="true">${i%3===0?'✦':i%3===1?'⌘':'↗'}</span><span class="arrow" aria-hidden="true">↗</span><h3>${escapeHTML(link.title || 'Uden titel')}</h3><p>${escapeHTML(link.description || 'Åbn denne side.')}</p>`; grid.append(card); });
-    }
-    function setLoggedIn(user){ $('loginButton').classList.toggle('hidden', !!user); $('logoutButton').classList.toggle('hidden', !user); $('editButton').classList.toggle('hidden', !user); if(!user) $('editor').classList.remove('open'); }
-    function setSetupNotice(user){ const box=$('setupNotice'); if(!user){ box.classList.add('hidden'); return; } box.classList.remove('hidden'); box.innerHTML=`<div class="notice"><strong>For at få Login og redigering til at fungere:</strong> Opret tabellen i Supabase SQL editor, så din bruger kan læse og opdatere config. Kør dette SQL i din Supabase-projekt SQL editor:<br><br><code>create table if not exists public.site_config (id integer primary key check (id = 1), owner_id uuid not null references auth.users(id), config jsonb not null default '{}'::jsonb);<br>alter table public.site_config enable row level security;<br>create policy "Owner can read config" on public.site_config for select to authenticated using (auth.uid() = owner_id);<br>create policy "Owner can update config" on public.site_config for update to authenticated using (auth.uid() = owner_id) with check (auth.uid() = owner_id);<br>insert into public.site_config (id, owner_id, config) values (1, auth.uid(), '{}'::jsonb) on conflict (id) do nothing;</code></div>`; }
-    async function loadConfig(user){
-      if(!user){ config=structuredClone(defaults); render(); setSetupNotice(null); return; }
-      const { data, error } = await supabase.from('site_config').select('config').eq('id',1).maybeSingle();
-      if(error){ config=structuredClone(defaults); render(); setSetupNotice(user); return; }
-      if(data && data.config){ config={...defaults, ...data.config, links:Array.isArray(data.config.links)?data.config.links:defaults.links}; } else { config=structuredClone(defaults); }
-      render();
-      setSetupNotice(null);
-    }
-    function openEditor(){
-      $('editBrand').value=config.brand;
-      $('editEyebrow').value=config.eyebrow;
-      $('editTitle').value=config.title;
-      $('editDescription').value=config.description;
-      $('editProjectTitle').value=config.projectTitle;
-      $('editSubtitle').value=config.subtitle;
-      $('editFooter').value=config.footer;
-      $('editTheme').value=config.theme || 'midnight';
-      const list=$('linkEditors'); list.replaceChildren();
-      (config.links || []).forEach((link) => addLinkEditor(link));
-      $('editor').classList.add('open');
-    }
-    function addLinkEditor(link={title:'', url:'', description:''}){
-      const wrap=document.createElement('div');
-      wrap.className='link-editor';
-      wrap.innerHTML=`<div class="link-editor-head"><span>Side</span><button type="button" class="button small danger remove-link">Fjern</button></div><div class="field"><label>Titel</label><input class="link-title" maxlength="70" value="${escapeHTML(link.title || '')}" placeholder="Mit projekt"></div><div class="field"><label>URL</label><input class="link-url" type="url" value="${escapeHTML(link.url || '')}" placeholder="https://brugernavn.github.io/projekt/"></div><div class="field"><label>Beskrivelse</label><textarea class="link-description" maxlength="180" placeholder="Hvad handler siden om?">${escapeHTML(link.description || '')}</textarea></div>`;
-      wrap.querySelector('.remove-link').onclick=()=>wrap.remove();
-      $('linkEditors').append(wrap);
-    }
-    $('loginButton').onclick=()=>$('loginOverlay').classList.add('open');
-    $('closeLogin').onclick=()=>$('loginOverlay').classList.remove('open');
-    $('loginOverlay').addEventListener('click', e => { if (e.target === $('loginOverlay')) $('loginOverlay').classList.remove('open'); });
-    $('toggleSignup').onclick=()=>{
-      isSignup = !isSignup;
-      $('loginTitle').textContent = isSignup ? 'Opret konto' : 'Log ind';
-      $('authSubtitle').textContent = isSignup ? 'Opret en konto til at tilpasse din hub.' : 'Log ind for at tilpasse din hub.';
-      $('authSubmit').textContent = isSignup ? 'Opret konto' : 'Log ind';
-      $('toggleSignup').textContent = isSignup ? 'Jeg har allerede en konto' : 'Opret konto';
-      $('password').autocomplete = isSignup ? 'new-password' : 'current-password';
-      $('authStatus').textContent = '';
-    };
-    $('authForm').onsubmit = async e => {
-      e.preventDefault();
-      $('authStatus').textContent='Arbejder…';
-      const email=$('email').value;
-      const password=$('password').value;
-      const result = isSignup ? await supabase.auth.signUp({email, password}) : await supabase.auth.signInWithPassword({email, password});
-      $('authStatus').textContent = result.error ? result.error.message : (isSignup ? 'Tjek din e-mail for at bekræfte kontoen.' : 'Du er logget ind.');
-      if (result.data && result.data.session) {
-        $('loginOverlay').classList.remove('open');
-        await loadConfig(result.data.user);
-      }
-    };
-    $('logoutButton').onclick = async () => { await supabase.auth.signOut(); config=structuredClone(defaults); render(); };
-    $('editButton').onclick = openEditor;
-    $('closeEditor').onclick = () => $('editor').classList.remove('open');
-    $('addLink').onclick = () => addLinkEditor();
-    $('saveConfig').onclick = async () => {
-      const user = (await supabase.auth.getUser()).data.user;
-      if(!user){ $('saveStatus').textContent='Log ind igen for at gemme.'; return; }
-      const links = [...$('linkEditors').querySelectorAll('.link-editor')].map(row => ({
-        title: row.querySelector('.link-title').value.trim(),
-        url: row.querySelector('.link-url').value.trim(),
-        description: row.querySelector('.link-description').value.trim()
-      })).filter(item => item.title && item.url);
-      const next = {
-        brand: $('editBrand').value.trim(),
-        eyebrow: $('editEyebrow').value.trim(),
-        title: $('editTitle').value.trim(),
-        description: $('editDescription').value.trim(),
-        projectTitle: $('editProjectTitle').value.trim(),
-        subtitle: $('editSubtitle').value.trim(),
-        footer: $('editFooter').value.trim(),
-        theme: $('editTheme').value,
-        links
-      };
-      $('saveStatus').textContent='Gemmer…';
-      const { error } = await supabase.from('site_config').upsert({id:1, owner_id:user.id, config:next}, { onConflict: 'id' });
-      if(error){ $('saveStatus').textContent='Kunne ikke gemme: '+error.message; return; }
-      config = { ...defaults, ...next };
-      render();
-      $('saveStatus').textContent='Ændringerne er gemt!';
-      setSetupNotice(null);
-    };
-    supabase.auth.onAuthStateChange((_event, session) => {
-      setLoggedIn(session && session.user ? session.user : null);
-      loadConfig(session && session.user ? session.user : null);
-    });
-    (async () => {
-      const { data: { session } } = await supabase.auth.getSession();
-      setLoggedIn(session && session.user ? session.user : null);
-      await loadConfig(session && session.user ? session.user : null);
-    })();
+    function validUrl(value){try{const u=new URL(value);return ['https:','http:'].includes(u.protocol)?u.href:null}catch{return null}}
+    function render(){document.body.dataset.theme=config.theme||'midnight';for(const [id,key] of [['brand','brand'],['eyebrow','eyebrow'],['title','title'],['description','description'],['projectTitle','projectTitle'],['subtitle','subtitle'],['footer','footer']])$(id).textContent=config[key]||defaults[key];const grid=$('projects');grid.replaceChildren();if(!config.links?.length){grid.innerHTML='<div class="empty">Ingen links endnu.</div>';return}config.links.forEach((link,i)=>{const href=validUrl(link.url);if(!href)return;const card=document.createElement('a');card.className='card';card.href=href;card.target='_blank';card.rel='noopener noreferrer';card.innerHTML=`<span class="icon">${i%2?'⌘':'✦'}</span><span class="arrow">↗</span><h3>${escapeHTML(link.title||'Side')}</h3><p>${escapeHTML(link.description||'Åbn denne side.')}</p>`;grid.append(card)})}
+    function setLoggedIn(user){$('loginButton').classList.toggle('hidden',!!user);$('logoutButton').classList.toggle('hidden',!user);$('editButton').classList.toggle('hidden',!user);if(!user)$('editor').classList.remove('open')}
+    $('loginButton').addEventListener('click',()=>{$('loginOverlay').classList.add('open');$('authStatus').textContent=supabaseClient?'':'Forbinder til Supabase…';$('email').focus()});
+    $('closeLogin').addEventListener('click',()=>$('loginOverlay').classList.remove('open'));
+    $('loginOverlay').addEventListener('click',e=>{if(e.target===$('loginOverlay'))$('loginOverlay').classList.remove('open')});
+    $('toggleSignup').addEventListener('click',()=>{isSignup=!isSignup;$('loginTitle').textContent=isSignup?'Opret konto':'Log ind';$('authSubtitle').textContent=isSignup?'Opret en konto i Supabase Authentication.':'Log ind med din Supabase-konto.';$('authSubmit').textContent=isSignup?'Opret konto':'Log ind';$('toggleSignup').textContent=isSignup?'Jeg har allerede en konto':'Opret konto';$('password').autocomplete=isSignup?'new-password':'current-password';$('authStatus').textContent=''});
+    $('authForm').addEventListener('submit',async e=>{e.preventDefault();if(!supabaseClient){$('authStatus').textContent='Supabase kunne ikke indlæses. Kontrollér internetforbindelsen, og genindlæs siden.';return}$('authSubmit').disabled=true;$('authStatus').textContent='Arbejder…';try{const credentials={email:$('email').value.trim(),password:$('password').value};const {data,error}=isSignup?await supabaseClient.auth.signUp(credentials):await supabaseClient.auth.signInWithPassword(credentials);if(error)throw error;if(isSignup&&!data.session){$('authStatus').textContent='Konto oprettet. Tjek din e-mail for at bekræfte den, og log derefter ind.'}else{$('authStatus').textContent='Logget ind.';$('loginOverlay').classList.remove('open');setLoggedIn(data.user);await loadConfig()}}catch(error){$('authStatus').textContent=error.message||'Kunne ikke logge ind. Prøv igen.'}finally{$('authSubmit').disabled=false}});
+    $('logoutButton').addEventListener('click',async()=>{if(supabaseClient)await supabaseClient.auth.signOut();setLoggedIn(null);config=structuredClone(defaults);render()});
+    $('editButton').addEventListener('click',openEditor);$('closeEditor').addEventListener('click',()=>$('editor').classList.remove('open'));$('addLink').addEventListener('click',()=>addLinkEditor());$('saveConfig').addEventListener('click',saveConfig);
+    function addLinkEditor(link={title:'',url:'',description:''}){const row=document.createElement('div');row.className='link-edit';row.innerHTML=`<div class="link-head"><strong>Side</strong><button class="button danger remove" type="button">Fjern</button></div><div class="field"><label>Titel</label><input class="link-title" maxlength="70" value="${escapeHTML(link.title)}"></div><div class="field"><label>URL</label><input class="link-url" type="url" placeholder="https://brugernavn.github.io/projekt/" value="${escapeHTML(link.url)}"></div><div class="field"><label>Beskrivelse</label><textarea class="link-description" maxlength="180">${escapeHTML(link.description)}</textarea></div>`;row.querySelector('.remove').addEventListener('click',()=>row.remove());$('linkEditors').append(row)}
+    function openEditor(){for(const [id,key] of [['editBrand','brand'],['editEyebrow','eyebrow'],['editTitle','title'],['editDescription','description'],['editProjectTitle','projectTitle'],['editSubtitle','subtitle'],['editFooter','footer']])$(id).value=config[key]||'';$('editTheme').value=config.theme||'midnight';$('linkEditors').replaceChildren();(config.links||[]).forEach(addLinkEditor);$('editor').classList.add('open')}
+    async function loadConfig(){if(!supabaseClient)return;const {data,error}=await supabaseClient.from('site_config').select('config').eq('id',1).maybeSingle();if(error){$('setupNotice').textContent='Supabase-login virker, men databasen mangler opsætning. Se opsætningsvejledningen i repositoryts README eller Supabase SQL Editor.';$('setupNotice').classList.remove('hidden');return}if(data?.config)config={...defaults,...data.config,links:Array.isArray(data.config.links)?data.config.links:defaults.links};render();$('setupNotice').classList.add('hidden')}
+    async function saveConfig(){if(!supabaseClient){$('saveStatus').textContent='Supabase er ikke forbundet.';return}const {data:{user}}=await supabaseClient.auth.getUser();if(!user){$('saveStatus').textContent='Log ind igen for at gemme.';return}const links=[...$('linkEditors').querySelectorAll('.link-edit')].map(row=>({title:row.querySelector('.link-title').value.trim(),url:row.querySelector('.link-url').value.trim(),description:row.querySelector('.link-description').value.trim()})).filter(x=>x.title&&validUrl(x.url));const next={brand:$('editBrand').value.trim(),eyebrow:$('editEyebrow').value.trim(),title:$('editTitle').value.trim(),description:$('editDescription').value.trim(),projectTitle:$('editProjectTitle').value.trim(),subtitle:$('editSubtitle').value.trim(),footer:$('editFooter').value.trim(),theme:$('editTheme').value,links};$('saveStatus').textContent='Gemmer…';const {error}=await supabaseClient.from('site_config').upsert({id:1,owner_id:user.id,config:next},{onConflict:'id'});if(error){$('saveStatus').textContent='Kunne ikke gemme: '+error.message;return}config={...defaults,...next};render();$('saveStatus').textContent='Ændringerne er gemt.';}
+    render();
+    (async()=>{try{const {createClient}=await import('https://esm.sh/@supabase/supabase-js@2');supabaseClient=createClient('https://yewktdwjrbjqufgkphhs.supabase.co','sb_publishable_6wmD232qfNqsoSo4X_4uRg_-C7cEngc');$('authStatus').textContent='';supabaseClient.auth.onAuthStateChange((_event,session)=>{setLoggedIn(session?.user||null);if(session?.user)loadConfig()});const {data:{session}}=await supabaseClient.auth.getSession();setLoggedIn(session?.user||null);await loadConfig()}catch(error){$('authStatus').textContent='Supabase kunne ikke forbindes: '+(error.message||'kontrollér netværket.')}})();
   </script>
 </body>
 </html>
